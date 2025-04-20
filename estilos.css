@@ -98,6 +98,82 @@ section {
   line-height: 1.6;
 }
 
+/* Estilos para la sección Maquetación */
+#maquetacion .categoria {
+  margin-top: 40px;
+}
+
+#maquetacion h3 {
+  font-size: 1.7em;
+  color: var(--acento);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.galeria {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.proyecto {
+  position: relative;
+  background-color: var(--rosa-pastel);
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  flex: 1 1 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.proyecto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: var(--verde-claro);
+}
+
+.proyecto .imagenes-proyecto {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.proyecto .imagenes-proyecto img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.proyecto .imagenes-proyecto img:hover {
+  transform: scale(1.1);
+}
+
+.proyecto .descripcion {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.proyecto .descripcion h4 {
+  font-size: 1.2em;
+  color: var(--acento);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.proyecto .descripcion p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Estilos para la sección de Proyectos */
 .categoria {
   margin-top: 40px;
 }
@@ -187,6 +263,7 @@ section {
   background-color: var(--verde-claro);
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 30px 0;
